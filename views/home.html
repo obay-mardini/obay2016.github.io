@@ -1,0 +1,47 @@
+
+    <div class="container" ng-controller="IndexController">
+        <div class="row row-content media">
+            <div class="media-left">
+                <img  class="media-object" src="{{getDish.image}}">
+            </div>
+            <div class="media-body" style="padding-left:20px;">
+                <h4 class="media-heading">{{getDish.name}} <span class="label label-danger">{{getDish.label}}</span> <span class="badge">{{getDish.price}}</span> </h4>
+                <p>{{getDish.description}}</p>
+            </div>
+            <div class="media-right">
+                <p style="padding:20px;"></p>
+                <h3 class="media-heading">Our Lipsmacking Culinary Creations</h3>
+            </div>
+        </div>
+
+        <div class="row row-content media">
+            <div class="media-right">
+                <p style="padding:20px;"></p>
+                <h3 class="media-heading">This Month's Promotions</h3>
+            </div>
+            <div class="media-body" style="padding-left:20px;">
+				<h4 class="media-heading">{{getPromotion.name}} <span class="label label-danger">{{getPromotion.label}}</span> <span class="badge">{{getPromotion.price}}</span></h4>
+                <p>{{getPromotion.description}}</p>
+            </div>
+            <div class="media-left">
+                <img class="media-object" src="{{getPromotion.image}}">
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-3 col-sm-push-9">
+                <p style="padding:20px;"></p>
+                <h3 align=center>Meet our Culinary Specialists</h3>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-sm-pull-3 media">
+                <div class="media-left">
+                    <img src="{{getLeader.image}}" class="media-object">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{getLeader.name}} <span class="title">{{getLeader.designation}}</span></h4>
+                    <p>{{getLeader.description}}</p>
+                </div>
+				
+            </div>
+        </div>
+    </div>
